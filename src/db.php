@@ -1,10 +1,10 @@
 <?php
 function conectarDB() {
-    $host = getenv('DB_HOST');
-    $port = getenv('DB_PORT');
-    $dbname = getenv('DB_NAME');
-    $user = getenv('DB_USER');
-    $password = getenv('DB_PASSWORD');
+    $host = 'sii-postgres.postgres.database.azure.com';    // URL de tu base de datos remota
+    $port = '5432';                      // Puerto PostgreSQL (normalmente 5432)
+    $dbname = 'postgres';       // Nombre de tu base de datos
+    $user = 'jaen';                // Usuario de la base de datos
+    $password = 'BDnova1!';           // Contraseña de la base de datos
 
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
     try {
